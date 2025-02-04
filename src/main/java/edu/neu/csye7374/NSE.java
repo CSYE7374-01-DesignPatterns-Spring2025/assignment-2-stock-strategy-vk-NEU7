@@ -2,7 +2,6 @@ package edu.neu.csye7374;
 
 public class NSE {
     private static NSE instance = null;
-    private MarketStrategyAPI marketStrategy;
 
     private NSE() {
     }
@@ -16,7 +15,6 @@ public class NSE {
 
 
     public static void startTrading() {
-        NSE nse = NSE.getInstance();
 
         // apple is lazy initialization
         Stock appleStock = AppleStockFactory.getInstance().createStock("123", "APPL", 199.0, "Apple Stock price", 0);
